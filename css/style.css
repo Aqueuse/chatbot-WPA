@@ -1,0 +1,74 @@
+:root {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.chatbox {
+    width: 100%;
+    height: calc(99vh - 50px);
+    background-color: whitesmoke;
+    border: 1px solid gray;
+    font-size: x-large;
+    overflow: auto;
+    transform : rotate(180deg);
+    direction : rtl;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: smaller;
+    padding: 5px;
+    overflow : auto;
+    transform : rotate(180deg);
+    direction : ltr;
+}
+
+.chatLink {
+    background-color: lightblue;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 3px 3px grey;
+}
+
+.chatLink:hover {
+    background-color: lightskyblue;
+    box-shadow: 1px 1px grey;
+}
+
+.textzone {
+}
+
+.sendbutton {
+    float: right;
+    width: 170px;
+    height: 50px;
+    background-color: lightblue;
+    border : 0;
+    border-radius: 10px;
+    box-shadow: 3px 3px grey;
+    font-size: x-large;
+}
+
+.textfield {
+    min-width: 50px;
+    width: calc(99% - 170px);
+    height: 50px;
+    resize: none;
+    background-color: aliceblue;
+    font-size: x-large;
+}
+
+.botMessage {
+    text-align: right;
+}
+
+.userMessage {
+    text-align: left;
+}

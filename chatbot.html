@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000"/>
+    <link rel="icon" href="favicon.ico">
+    <link rel=stylesheet href="css/style.css">
+    <title>Scribot</title>
+</head>
+<body>
+    <script src="scripts/script.js"></script>
+    <script defer src="scripts/Etiquette.js"></script>
+    <script defer src="scripts/data.js"></script>
+    <script defer src="scripts/chatbot.js"></script>
+
+    <div class=chatbox id=chatBox>
+    </div>
+
+    <div class=textzone>
+        <textarea class=textfield id=textField></textarea>
+        <button class=sendbutton id=sendButton onclick="readTextField()">Envoyer</button>
+    </div>
+</body>
+</html>
